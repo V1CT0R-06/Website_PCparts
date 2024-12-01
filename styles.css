@@ -33,28 +33,29 @@ header nav a {
     font-size: 2em;
 }
 
-.featured, .product-grid {
+.product-list {
     padding: 20px;
-}
-
-.product-grid {
     display: flex;
+    flex-direction: column;
     gap: 20px;
-    justify-content: center;
+    align-items: center;
 }
 
 .product {
+    display: flex;
+    gap: 20px;
+    align-items: center;
     border: 1px solid #ddd;
     border-radius: 5px;
     background: #fff;
     padding: 15px;
-    text-align: center;
-    width: 200px;
+    width: 90%;
+    max-width: 800px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .product img {
-    max-width: 100%;
+    max-width: 150px;
     border-radius: 5px;
 }
 
@@ -69,4 +70,8 @@ button {
 
 button:hover {
     background: #333;
+}
+
+form input, form textarea, form button {
+    font-size: 1em;
 }
